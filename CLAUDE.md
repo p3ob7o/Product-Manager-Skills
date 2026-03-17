@@ -53,11 +53,19 @@
 **Recent Updates:**
 - ✅ **v0.75 Released (Mar 17, 2026):** Restored pedagogic-first philosophy across all governance docs
   - Added Design Philosophy section to `CLAUDE.md`, `CONTRIBUTING.md`, `AGENTS.md`, and `README.md`
-  - ABC (Always Be Coaching) named as governing principle throughout
+  - ABC (Always Be Coaching) and "send the ladder down" named as governing principles throughout
+  - Equal-footing framing: agent capability and human PM learning are co-equal goals, neither is a byproduct
   - Named the anti-pattern explicitly: efficiency edits that strip learning scaffolding are defects
-  - Added "send the ladder down" as the mission framing in all key docs
-  - Added pedagogic checklist item to `CONTRIBUTING.md` quality gate
+  - Added pedagogic checklist item and negative content-removal check to `CONTRIBUTING.md`
+  - Added naming conventions (no contributor handles/prefixes) to `CONTRIBUTING.md`
+  - Named protected sections explicitly: "Why This Works," Anti-Patterns, consequence chains, educational preambles
+  - Added note on external scoring tools optimizing for the wrong rubric
+  - Claude Code plugin marketplace badge and coming-soon install snippet added to `README.md`
   - Release note: `docs/announcements/2026-03-17-v0-75-pedagogic-first.md`
+- **Open PRs (as of Mar 17, 2026):**
+  - #1 KNE-AI — `pm-skill-creator` interactive skill — approved pending rename of frontmatter `name` to `pm-skill-creator`
+  - #2 markphelps — Claude Code plugin marketplace (`marketplace.json`) — approved pending version `0.75.0` and correct email `dean.peters@productside.com`
+  - #3 popey — efficiency improvements across 46 skills — sent back; structural table consolidations welcome, pedagogic content (Why This Works, Anti-Patterns, educational preambles) must be restored
 - ✅ **v0.7 Released (Mar 9, 2026):** Tightened skill quality and discovery standards across the full library
   - Standardized trigger-oriented `description` language so skills more clearly answer "use this when..."
   - Added repo-standard `intent` frontmatter to preserve richer meaning without weakening trigger metadata
