@@ -4,6 +4,24 @@ Thanks for your interest in contributing! This repository helps product managers
 
 ---
 
+## 🎓 Design Philosophy — Read This First
+
+As much as this repo is for adding skills to your agent, it's equally tasked to **help product managers become more awesome at their craft — and to help them send the ladder down to others.**
+
+Skills here serve both goals simultaneously: they equip AI agents to do PM work at a professional level, and they teach the human PM the *why* behind the framework so they can explain it, adapt it, and pass it on.
+
+**ABC — Always Be Coaching** is a key governing principle.
+
+Every skill should:
+- Explain the *why*, not just the *what*
+- Name failure modes so the reader recognizes them in the wild
+- Show reasoning in examples, not just outputs
+- Leave the user with better judgment, not just a filled-in template
+
+**The most common contribution mistake:** trimming explanation to tighten copy. Brevity that strips learning scaffolding is a defect, not an improvement. If you're shortening a skill, check that you're cutting fluff — not cutting the lesson.
+
+---
+
 ## 🎯 Who Can Contribute?
 
 **Anyone!** You don't need to be technical. If you:
@@ -287,12 +305,13 @@ What to avoid and why.
 
 Your skill should pass these checks:
 
+- [ ] **Pedagogic:** Does it explain the *why*, not just the *what*? Would a PM finish this knowing more than when they started?
 - [ ] **Agent-ready:** Could an AI read this and apply it without asking clarifying questions?
 - [ ] **Self-contained:** Does it define its own terms? (No unexplained jargon)
 - [ ] **Practical:** Does it include at least one concrete example?
 - [ ] **Opinionated:** Does it take a stance? (Not just "here are options")
 - [ ] **Skimmable:** Can you skim the headings and bullets and get 80% of the value?
-- [ ] **Zero fluff:** Did you cut every word that doesn't earn its keep?
+- [ ] **Zero fluff:** Did you cut every word that doesn't earn its keep? (But not the lesson — see Design Philosophy above)
 - [ ] **Properly categorized:** Is it clearly a component, interactive, or workflow skill?
 
 **For Interactive Skills Only:**
@@ -372,6 +391,7 @@ Your skill should pass these checks:
 - Duplicate content (check existing skills first)
 - Sales or marketing content (this is a PM skill library)
 - Overly academic or theoretical frameworks (skills must be actionable)
+- **Efficiency edits that strip pedagogic value** — trimming explanation, removing anti-patterns, or cutting examples to make a skill shorter is a defect. The teaching is the point.
 
 ---
 

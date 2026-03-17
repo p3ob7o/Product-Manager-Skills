@@ -4,7 +4,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/deanpeters/Product-Manager-Skills?style=flat-square)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/blob/main/CONTRIBUTING.md)
-[![Version](https://img.shields.io/badge/version-v0.7-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills)
+[![Version](https://img.shields.io/badge/version-v0.75-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills)
 ![Skills](https://img.shields.io/badge/skills-46-informational?style=flat-square)
 ![Commands](https://img.shields.io/badge/commands-6-informational?style=flat-square)
 ![Streamlit Beta](https://img.shields.io/badge/streamlit-beta-orange?style=flat-square)
@@ -22,17 +22,37 @@
 ║   46 battle-tested skills + 6 command workflows                    ║
 ║   Claude Code • Cursor • Codex  • n8n • OpenClaw • and more ...    ║
 ║                                                                    ║
-║   v0.7 • Mar 9, 2026 • CC BY-NC-SA 4.0                             ║
+║   v0.75 • Mar 17, 2026 • CC BY-NC-SA 4.0                            ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
-**Train AI agents to do product management work like a pro.**
+**Help product managers become more awesome at their craft — and help them send the ladder down to others.**
 
-Frame problems, hunt opportunities, scaffold validation experiments, and kill bad bets fast. With battle-tested frameworks from Teresa Torres, Geoffrey Moore, Amazon, MITRE, and much more from product management's greatest hits.
+Battle-tested PM frameworks that teach both you and your AI agents how to do product management work at a professional level. You learn the *why*. Your agents execute the *how*. Everyone gets better.
+
+Frame problems, hunt opportunities, scaffold validation experiments, and kill bad bets fast. With frameworks from Teresa Torres, Geoffrey Moore, Amazon, MITRE, and much more from product management's greatest hits.
 
 ---
 
 ## 📣 Updates & Announcements
+
+### Mar 17, 2026 — v0.75 Pedagogic-First: Restoring What This Repo Is Actually For
+
+I want to apologize  to a contributor who recently submitted a well-intentioned and well-coded improvement that stripped learning scaffolding in favor of tighter copy. It wasn't their fault — the docs they read never crisply stated that pedagogic value is non-negotiable. We fixed that. I will work with that contribution to bring in its efficiencies while retaining the learning aspects of the skills.
+
+**What this repo is actually for:** As much as this repo is for adding skills to your agent, it's equally tasked to help product managers become more awesome at their craft, and helping them send the ladder down to others. Skills here serve both goals: they make your agent more capable, and they make you more knowledgeable about why the framework works. Neither is a byproduct of the other.
+
+**ABC — Always Be Coaching** is a key governing principle. Every skill should leave the person using it knowing more than when they started. Stripping explanation to tighten output is a defect, not an improvement.
+
+What changed in v0.75:
+- `README.md` — Mission statement updated to name both audiences: human PMs and AI agents
+- `CONTRIBUTING.md` — New Design Philosophy section so contributors know what they're protecting
+- `CLAUDE.md` — Pedagogic-first added to the agent's mandate, not just the style guide
+- `AGENTS.md` — New Operating Philosophy section so coding agents don't optimize away the teaching
+
+Release note: [`docs/announcements/2026-03-17-v0-75-pedagogic-first.md`](docs/announcements/2026-03-17-v0-75-pedagogic-first.md)
+
+---
 
 ### Mar 9, 2026 — v0.7 Sharper Skills, Faster Discovery
 
@@ -174,18 +194,36 @@ Still rewriting PM prompts and getting generic AI output? I built a reusable PM 
 
 ## 🎯 What This Is
 
-**46 ready-to-use PM skills + reusable command workflows** that teach AI agents how to do product management work professionally—without you having to explain your process every time.
+**46 ready-to-use PM skills + reusable command workflows** that teach both you and your AI agents how to do product management work at a professional level — so the PM understands the *why* and the agent can execute the *how*.
 
-Instead of saying *"Write a PRD"* and hoping for the best, the agent already knows:
-- ✅ How to structure a PRD
-- ✅ What questions to ask stakeholders
-- ✅ Which prioritization framework to use (and when)
-- ✅ How to run customer discovery interviews
-- ✅ How to break down epics using proven patterns
+Instead of saying *"Write a PRD"* and hoping for the best, you and your agent both know:
+- ✅ How to structure a PRD and why each section earns its place
+- ✅ What questions to ask stakeholders and what you're listening for
+- ✅ Which prioritization framework to use (and when each one breaks down)
+- ✅ How to run customer discovery interviews and what signals matter
+- ✅ How to break down epics using proven patterns — and the tradeoffs of each
 
-**Result:** You work faster, with better consistency, at a higher strategic level.
+**Result:** You work faster, with better consistency, at a higher strategic level — and you can explain why.
 
 **Works with:** Claude Code, Cowork, OpenAI Codex, ChatGPT, Gemini, and any AI agent that can read structured knowledge.
+
+---
+
+## 🎓 Design Philosophy — Pedagogic and Practical in Equal Measure
+
+As much as this repo is for adding skills to your agent, it's equally tasked to **help product managers become more awesome at their craft — and to help them send the ladder down to others.**
+
+Skills here serve both goals simultaneously. They equip AI agents to do PM work at a professional level, and they teach the human PM the *why* behind the framework — so they can explain it, adapt it, and pass it on.
+
+**ABC — Always Be Coaching** is a key governing principle. Every skill should leave the person using it knowing more than when they started.
+
+This means:
+- Skills explain reasoning, not just steps
+- Examples show the thinking, not just the output
+- Anti-patterns name the failure mode so you recognize it in the wild
+- Interactive skills coach through discovery — they don't just collect answers
+
+**An edit that strips learning scaffolding to tighten copy is a defect, not an improvement.**
 
 ---
 
@@ -214,7 +252,7 @@ Need discovery first?
 
 Commands make using skills easier without replacing skills.
 
-- Skills stay deep and pedagogic: they are still the source of truth for frameworks and quality.
+- Skills stay deep and pedagogic: they are the source of truth for frameworks, reasoning, and quality — for humans and agents alike.
 - Commands remove stitching work: one command chains the right skills in the right order.
 - You start faster: less "which skill should I run first?" and fewer manual handoffs.
 - Outputs are more consistent: commands enforce checkpoints, then defer to skill-level rigor.

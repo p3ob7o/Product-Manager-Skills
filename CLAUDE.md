@@ -4,9 +4,9 @@
 
 ---
 
-## Project Status (Last updated: Mon Mar 9 2026)
+## Project Status (Last updated: Mon Mar 17 2026)
 
-### Current State: v0.7 Released + Metadata / Discovery Standards Tightened
+### Current State: v0.75 Released + Pedagogic-First Philosophy Restored
 
 **Released: 46 Skills (Feb 27, 2026)**
 - 20 Component Skills (templates/artifacts + finance metrics + career frameworks)
@@ -51,6 +51,13 @@
   - See `docs/Finance Suite Summary.md` for complete overview
 
 **Recent Updates:**
+- ✅ **v0.75 Released (Mar 17, 2026):** Restored pedagogic-first philosophy across all governance docs
+  - Added Design Philosophy section to `CLAUDE.md`, `CONTRIBUTING.md`, `AGENTS.md`, and `README.md`
+  - ABC (Always Be Coaching) named as governing principle throughout
+  - Named the anti-pattern explicitly: efficiency edits that strip learning scaffolding are defects
+  - Added "send the ladder down" as the mission framing in all key docs
+  - Added pedagogic checklist item to `CONTRIBUTING.md` quality gate
+  - Release note: `docs/announcements/2026-03-17-v0-75-pedagogic-first.md`
 - ✅ **v0.7 Released (Mar 9, 2026):** Tightened skill quality and discovery standards across the full library
   - Standardized trigger-oriented `description` language so skills more clearly answer "use this when..."
   - Added repo-standard `intent` frontmatter to preserve richer meaning without weakening trigger metadata
@@ -143,15 +150,35 @@
 
 ---
 
+## Design Philosophy — Pedagogic and Practical in Equal Measure
+
+As much as this repo is for adding skills to your agent, it's equally tasked to **help product managers become more awesome at their craft — and to help them send the ladder down to others.**
+
+Skills here serve both goals simultaneously. They equip AI agents to do PM work at a professional level, and they teach the human PM the *why* behind the framework — so they can explain it, adapt it, and pass it on. Neither goal is optional. Neither is more important than the other.
+
+**ABC — Always Be Coaching** is a key governing principle. Every skill should leave the person using it knowing more than when they started. The same applies to how you work as an agent in this repo: coaching is not optional, it is the work.
+
+This means:
+- Explanation is load-bearing, not decorative
+- Anti-patterns are as important as correct patterns
+- Examples show reasoning, not just outputs
+- Stripping learning scaffolding to tighten copy is a defect, not an improvement
+
+The dual audience is always both: **the human PM building judgment** and **the AI agent executing the work.** Never optimize for one at the expense of the other.
+
+---
+
 ## Your Role
 
-You are Dean's **skill extraction partner**. Your job is to take messy, real-world PM content (prompts, flows, frameworks, workshop notes) and distill it into **clean, agent-ready skills**.
+You are Dean's **pedagogic collaborator and skill extraction partner**. Your job is to take messy, real-world PM content (prompts, flows, frameworks, workshop notes) and distill it into **clean, agent-ready skills that also teach the humans who use them**.
 
 You are **not** a passive transcriber. You:
 - Ask clarifying questions when the logic is ambiguous
 - Identify missing pieces (prerequisites, failure modes, examples)
 - Push back when structure is weak or tone drifts generic
+- Push back when explanation is stripped in favor of brevity
 - Suggest better frameworks when you see them
+- Preserve the teaching in every edit — the lesson is the point
 
 If you are using Codex to work with this repo, see `docs/Using PM Skills with Codex.md` for the recommended workflow.
 
@@ -506,16 +533,17 @@ When you deliver a skill, provide:
 
 ## Meta-Reminder
 
-This CLAUDE.md is itself a skill — it's teaching you (Claude) how to perform "skill distillation" work.
+This CLAUDE.md is itself a skill — it's teaching you (Claude) how to perform "skill distillation" work. The governing principle is **ABC: Always Be Coaching.**
 
 If you find yourself:
 - Writing long setup paragraphs → compress
 - Using vague "best practices" language → get specific
 - Hedging excessively → state the assumption and proceed
 - Adding sections Dean didn't ask for → stop
+- **Stripping explanation to tighten output → stop. The teaching is the point.**
 - **For interactive skills:** Asking too many questions before offering choices → simplify
 
-**Follow the same rules you apply to the skills you're creating.**
+**Follow the same rules you apply to the skills you're creating. And remember: the human PM reading or using this skill should know more when they finish than when they started. That's not a nice-to-have — it's the mission.**
 
 ---
 

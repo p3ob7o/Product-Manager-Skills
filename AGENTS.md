@@ -1,5 +1,24 @@
 # Repository Guidelines
 
+## Operating Philosophy — Pedagogic and Practical in Equal Measure
+
+As much as this repo is for adding skills to your agent, it's equally tasked to **help product managers become more awesome at their craft — and to help them send the ladder down to others.**
+
+Skills here serve both goals simultaneously. The PM using a skill should finish knowing more than when they started — not just have a completed artifact. The reasoning embedded in a skill is what makes the output trustworthy, explainable, and transferable to the next person.
+
+**ABC — Always Be Coaching** is a key governing principle.
+
+This has direct implications for how you work in this repo as an agent:
+
+- **Do not optimize for brevity at the cost of explanation.** Stripping learning scaffolding to tighten a skill is a defect, not an improvement.
+- **Anti-patterns are load-bearing.** They teach the human what to watch for in the wild. Do not remove them.
+- **Examples show reasoning, not just outputs.** A shorter example that hides the thinking is worse than a longer one that shows it.
+- **The dual audience is always both:** the human PM building judgment and the AI agent executing the work. Never optimize for one at the expense of the other.
+
+If you are making efficiency improvements, tighten fluff — not lessons. If you are unsure which is which, leave it in.
+
+---
+
 ## Project Structure & Module Organization
 - `skills/<skill-name>/SKILL.md` holds each skill. Skill folders use lowercase kebab-case names (e.g., `skills/user-story/SKILL.md`).
 - `commands/<command-name>.md` holds reusable orchestration commands that chain local skills.
@@ -72,6 +91,9 @@ No automated tests exist. Validate changes by:
 - If Streamlit beta changed, update `app/STREAMLIT_INTERFACE.md`, `app/.env.example`, and release notes in `README.md`/`docs/announcements/`.
 
 ## Skill Quality Expectations
+- **Pedagogic first:** The PM using this skill should know more when they finish than when they started.
 - Agent-ready, self-contained, and practical.
-- Include at least one concrete example and one explicit anti-pattern.
+- Include at least one concrete example that shows reasoning, not just output.
+- Include at least one explicit anti-pattern — this is not optional decoration.
 - Define jargon on first use and keep tradeoffs explicit.
+- Do not remove explanation, anti-patterns, or examples in the name of brevity. That is the mission, not the padding.
