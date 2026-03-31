@@ -26,13 +26,16 @@ This is not a waterfall spec—it's a living document that captures strategic co
 ### What is a PRD?
 
 A PRD (Product Requirements Document) is a structured document that answers:
-1. **What problem are we solving?** (Problem statement)
-2. **For whom?** (Target users/personas)
-3. **Why now?** (Strategic context, business case)
-4. **What are we building?** (Solution overview)
-5. **How will we measure success?** (Metrics, success criteria)
-6. **What are the requirements?** (User stories, acceptance criteria, constraints)
-7. **What are we NOT building?** (Out of scope)
+1. **Why are we doing this?** (Summary)
+2. **What problem are we solving, for whom, and why now?** (Problem statement)
+3. **Who are we building for — and who are we not?** (Target audience)
+4. **What does the user need to accomplish?** (User stories)
+5. **What are we building and what's out of scope?** (Feature definition)
+6. **How does this compare to the competition?** (Competitive overview)
+7. **How will we measure success?** (Success and measurement)
+8. **What could go wrong and what don't we know yet?** (Risks and open questions)
+9. **How much effort is this?** (Level of effort)
+10. **Who is accountable, responsible, consulted, and informed?** (Ownership & stakeholders)
 
 ### PRD Structure (Standard Template)
 
@@ -100,6 +103,7 @@ A PRD (Product Requirements Document) is a structured document that answers:
 - **Context preservation:** Captures research and strategic rationale for future reference
 - **Decision log:** Documents what's in scope, out of scope, and why
 - **Execution clarity:** Provides engineering with user stories and acceptance criteria
+- **Accountability:** RACI table makes ownership explicit before work begins
 
 ### Anti-Patterns (What This Is NOT)
 - **Not a detailed spec:** PRDs frame the problem and solution; they don't specify UI pixel-by-pixel
@@ -137,32 +141,32 @@ This file defines the workflow sequence and domain-specific outputs. If there is
 
 Use `template.md` for the full fill-in structure.
 
-This workflow orchestrates **8 phases** over **2-4 days**, using multiple component and interactive skills.
+This workflow orchestrates **10 phases** over **2-4 days**, using multiple component and interactive skills.
 
 ---
 
-## Phase 1: Executive Summary (30 minutes)
+## Phase 1: Summary (30 minutes)
 
-**Goal:** Write a one-paragraph overview for skimmers.
+**Goal:** Write the opening "why" paragraph that sets context for the whole document.
 
 ### Activities
 
-**1. Draft Executive Summary**
-- **Format:** "We're building [solution] for [persona] to solve [problem], which will result in [impact]."
+**1. Draft Summary**
+- **Format:** One paragraph that sets up why this work matters — the context, the opportunity, and the direction.
 - **Example:**
-  > "We're building a guided onboarding checklist for non-technical small business owners to solve the problem of 60% drop-off in the first 24 hours due to lack of guidance, which will increase activation rate from 40% to 60% and reduce churn by 10%."
+  > "Our onboarding drop-off rate has reached 60%, driven by users landing on an empty dashboard with no guidance. This PRD defines a guided onboarding checklist that walks new users through their first three core actions, giving them a clear path to value and reducing early churn."
 
 - **Participants:** PM
 - **Duration:** 30 minutes
-- **Output:** One-paragraph summary
+- **Output:** One-paragraph opening
 
-**Tip:** Write this first (forces clarity), but refine it last (after other sections are complete).
+**Tip:** Write this first to force clarity, but refine it last — after all other sections are complete, the summary almost writes itself.
 
 ---
 
 ## Phase 2: Problem Statement (60 minutes)
 
-**Goal:** Frame the customer problem with evidence.
+**Goal:** Frame the customer problem with evidence in one to three sentences.
 
 ### Activities
 
@@ -178,21 +182,10 @@ This workflow orchestrates **8 phases** over **2-4 days**, using multiple compon
 ```markdown
 ## 2. Problem Statement
 
-### Who has this problem?
-Non-technical small business owners (solopreneurs, 1-10 employees) who sign up for our SaaS product.
-
-### What is the problem?
-60% of users abandon onboarding within the first 24 hours because they don't know what to do first. They see an empty dashboard with no guidance, get overwhelmed by options, and leave.
-
-### Why is it painful?
-- **User impact:** Wastes time (30-60 min trying to figure out product), never reaches "aha moment," churns before experiencing value
-- **Business impact:** 60% activation rate → high churn, low LTV, poor word-of-mouth
-
-### Evidence
-- **Interviews:** 8/10 churned users said "I didn't know what to do first" (discovery interviews, Feb 2026)
-- **Analytics:** 60% of signups complete 0 actions within 24 hours (Mixpanel, Jan 2026)
-- **Support tickets:** "How do I get started?" is #1 support question (350 tickets/month)
-- **Customer quote:** "I logged in, saw an empty dashboard, and thought 'now what?' I gave up and went back to my spreadsheet."
+60% of new users abandon onboarding within the first 24 hours because they land on an
+empty dashboard with no guidance — overwhelming them before they experience any value.
+This is the #1 driver of early churn, supported by exit interviews, analytics, and
+support ticket volume. Solving it now is critical to hitting our Q1 retention OKR.
 ```
 
 **2. Add Supporting Context (Optional)**
@@ -203,189 +196,49 @@ Non-technical small business owners (solopreneurs, 1-10 employees) who sign up f
 
 ### Outputs from Phase 2
 
-- **Problem statement:** Who, what, why, evidence
+- **Problem statement:** What problem, for whom, why now, grounded in evidence
 - **Supporting artifacts:** Journey map, JTBD (if relevant)
 
 ---
 
-## Phase 3: Target Users & Personas (30 minutes)
+## Phase 3: Target Audience (30 minutes)
 
-**Goal:** Define who you're building for.
+**Goal:** Define who you're building for — and explicitly who you're not.
 
 ### Activities
 
-**1. Document Personas**
+**1. Document Target Audience**
 - **Use:** `skills/proto-persona/SKILL.md` (component) output
 - **Participants:** PM
 - **Duration:** 30 minutes
-- **Format:** Include persona name, role, goals, pain points, behaviors
+- **Format:** Primary audience, key traits, explicit exclusions for this phase
 
 **Example:**
 
 ```markdown
-## 3. Target Users & Personas
+## 3. Target Audience
 
-### Primary Persona: Solo Entrepreneur Sam
-- **Role:** Freelance consultant, solopreneur
-- **Company size:** 1 person (no IT support)
-- **Tech savviness:** Low (uses email, spreadsheets, basic SaaS)
-- **Goals:** Get value from software fast without technical expertise
-- **Pain points:** Overwhelmed by complex UIs, no time to watch tutorials, needs immediate value
-- **Current behavior:** Signs up for products, tries for 1 day, churns if not immediately useful
-
-### Secondary Persona: Small Business Owner (5-10 employees)
-- **Role:** Owner-operator, manages team
-- **Needs:** Onboard team members quickly
-- **Differs from primary:** More tolerant of complexity, willing to invest setup time
+- **Primary**: Non-technical solopreneurs signing up for their first SaaS product.
+  Not "users" — specifically owner-operators with no IT support, using email and
+  spreadsheets as their baseline.
+- **Key traits**: Low tolerance for complexity, no time for tutorials, need to see
+  value within minutes of signing up. Will abandon rather than ask for help.
+- **Not for this phase**: Teams of 5+ employees, technical users, existing customers
+  upgrading plans. Serving them well requires different onboarding logic — scope that
+  separately.
 ```
 
 ### Outputs from Phase 3
 
-- **Primary persona:** Detailed profile
-- **Secondary personas:** (if applicable)
+- **Primary audience:** Named specifically, not generically
+- **Key traits:** Behaviours and expectations that shape the design
+- **Explicit exclusions:** Who this release is not for and why
 
 ---
 
-## Phase 4: Strategic Context (45 minutes)
+## Phase 4: User Stories (90-120 minutes)
 
-**Goal:** Explain why this matters to the business and why now.
-
-### Activities
-
-**1. Document Business Goals**
-- **Source:** Company OKRs, strategic memos, roadmap
-- **Format:** Link feature to business outcomes
-- **Example:**
-  > "This initiative supports our Q1 OKR: Reduce churn from 15% to 8%. Improving onboarding activation directly impacts retention."
-
-**2. Size Market Opportunity (Optional)**
-- **Use:** `skills/tam-sam-som-calculator/SKILL.md` (interactive) output
-- **When:** For major initiatives, new products, exec presentations
-- **Example:**
-  > "TAM: 50M small businesses globally. SAM: 5M using SaaS tools. SOM: 500K solopreneurs in our target segments. Improving onboarding could unlock 30% of SAM (1.5M potential customers)."
-
-**3. Document Competitive Landscape (Optional)**
-- **Source:** Competitor research, G2/Capterra reviews
-- **Example:**
-  > "Competitors (Competitor A, B) have guided onboarding. Our lack of guidance is cited as a churn reason in exit surveys."
-
-**4. Explain "Why Now?"**
-- **Rationale:** Why prioritize this now vs. later?
-- **Example:**
-  > "Churn spiked 15% in Q4. Onboarding is the #1 driver (60% churn in first 30 days). Fixing this is critical to hitting retention OKR."
-
-### Outputs from Phase 4
-
-- **Business goals:** OKRs or strategic initiatives
-- **Market opportunity:** TAM/SAM/SOM (if applicable)
-- **Competitive context:** How competitors address this
-- **Why now:** Urgency rationale
-
----
-
-## Phase 5: Solution Overview (60 minutes)
-
-**Goal:** Describe what you're building (high-level, not detailed spec).
-
-### Activities
-
-**1. Write Solution Description**
-- **Format:** High-level overview, 2-3 paragraphs
-- **Example:**
-
-```markdown
-## 5. Solution Overview
-
-We're building a **guided onboarding checklist** that walks new users through core workflows step-by-step when they first log in.
-
-**How it works:**
-1. User signs up and logs in for the first time
-2. Modal appears: "Let's get you set up! Complete these 3 steps to get started."
-3. Checklist shows:
-   - ☐ Create your first project
-   - ☐ Invite a teammate (optional)
-   - ☐ Complete a sample task
-4. As user completes each step, checklist updates with checkmarks
-5. After completion, celebration modal: "You're all set! Here's what to do next."
-
-**Key features:**
-- Minimal: Only 3 core steps (not overwhelming)
-- Dismissible: Users can skip if they prefer to explore
-- Progress tracking: Visual progress bar (1/3, 2/3, 3/3)
-- Celebration: Positive reinforcement when complete
-```
-
-**2. Add User Flows or Wireframes (Optional)**
-- **Use:** Design tools (Figma, Sketch), or hand-drawn sketches
-- **When:** For complex features requiring visual explanation
-- **Output:** Embedded in PRD or linked
-
-**3. Reference Story Map (Optional)**
-- **Use:** `skills/user-story-mapping-workshop/SKILL.md` output
-- **When:** For complex features with multiple release slices
-- **Output:** Link to story map
-
-### Outputs from Phase 5
-
-- **Solution description:** High-level overview
-- **User flows/wireframes:** (if applicable)
-- **Story map:** (if applicable)
-
----
-
-## Phase 6: Success Metrics (30 minutes)
-
-**Goal:** Define how you'll measure success.
-
-### Activities
-
-**1. Define Primary Metric**
-- **Question:** What is the ONE metric this feature must move?
-- **Example:** "Activation rate (% of users completing first action within 24 hours)"
-- **Target:** "Increase from 40% to 60%"
-
-**2. Define Secondary Metrics**
-- **Question:** What else should we monitor (but not optimize for)?
-- **Examples:**
-  - Time-to-first-action (reduce from 3 days to 1 day)
-  - Completion rate of onboarding checklist (target: 80%)
-  - Support ticket volume (reduce "How do I get started?" tickets by 50%)
-
-**3. Define Guardrail Metrics**
-- **Question:** What should NOT get worse?
-- **Example:** "Sign-up conversion rate (don't add friction to signup flow)"
-
-**Example:**
-
-```markdown
-## 6. Success Metrics
-
-### Primary Metric
-**Activation rate** (% of users completing first action within 24 hours)
-- **Current:** 40%
-- **Target:** 60%
-- **Timeline:** Measure 30 days after launch
-
-### Secondary Metrics
-- **Time-to-first-action:** Reduce from 3 days to 1 day
-- **Onboarding checklist completion rate:** 80% of users complete all 3 steps
-- **Support tickets:** Reduce "How do I get started?" tickets from 350/month to 175/month
-
-### Guardrail Metrics
-- **Sign-up conversion rate:** Maintain at 10% (don't add friction to signup)
-```
-
-### Outputs from Phase 6
-
-- **Primary metric:** What you're optimizing for
-- **Secondary metrics:** Additional success indicators
-- **Guardrail metrics:** What shouldn't regress
-
----
-
-## Phase 7: User Stories & Requirements (90-120 minutes)
-
-**Goal:** Break solution into user stories with acceptance criteria.
+**Goal:** Break the solution into user stories with acceptance criteria, told from the user's perspective.
 
 ### Activities
 
@@ -408,17 +261,12 @@ We're building a **guided onboarding checklist** that walks new users through co
 - **Use:** `skills/user-story/SKILL.md` (component)
 - **Participants:** PM
 - **Duration:** 30 minutes per story
-- **Format:** User story + acceptance criteria
+- **Format:** "As a [who], I want [what], so that [why]" + acceptance criteria
 
 **Example User Stories:**
 
 ```markdown
-## 7. User Stories & Requirements
-
-### Epic Hypothesis
-We believe that adding a guided onboarding checklist for non-technical users will increase activation rate from 40% to 60% because users currently drop off due to lack of guidance.
-
-### User Stories
+## 4. User Stories
 
 **Story 1: Display onboarding checklist on first login**
 As a new user, I want to see a guided checklist when I first log in, so I know what to do first.
@@ -436,92 +284,232 @@ As a new user, I want to see my progress as I complete checklist steps, so I fee
 - [ ] When user completes step 1, checkmark appears next to "Create project"
 - [ ] Progress bar updates (1/3 → 2/3 → 3/3)
 - [ ] Checklist persists across sessions (if user logs out and back in)
-
-**Story 3: Celebrate checklist completion**
-As a new user, I want to receive positive feedback when I complete the checklist, so I feel confident using the product.
-
-**Acceptance Criteria:**
-- [ ] When user completes all 3 steps, celebration modal appears
-- [ ] Message: "You're all set! Here's what to do next: [suggested next actions]"
-- [ ] Confetti animation (optional, nice-to-have)
 ```
 
-**4. Document Constraints & Edge Cases**
-- **Technical constraints:** Platform limitations, browser support, etc.
-- **Edge cases:** What if user skips step 2? What if they complete steps out of order?
+**4. Document Edge Cases**
+- **Edge cases:** What if user skips a step? What if they complete steps out of order?
 
-### Outputs from Phase 7
+### Outputs from Phase 4
 
 - **Epic hypothesis:** Testable statement
 - **User stories:** 3-10 stories with acceptance criteria
-- **Constraints:** Technical limitations, edge cases
+- **Edge cases:** Scenarios outside the happy path
 
 ---
 
-## Phase 8: Out of Scope & Dependencies (30 minutes)
+## Phase 5: Feature Definition (60 minutes)
 
-**Goal:** Define what you're NOT building and what you depend on.
+**Goal:** Explain what you're building in plain language — and explicitly what's not included in this release.
 
 ### Activities
 
-**1. Document Out of Scope**
-- **Format:** List features/requests explicitly excluded
-- **Rationale:** Why not building now?
+**1. Write Feature Definition**
+- **Format:** Plain-language explanation of the product or feature. Write for a colleague in Design, Engineering, or GTM who needs to understand what this is and how it works — not a spec, but enough to act on.
+- **Example:**
+
+```markdown
+## 5. Feature Definition
+
+We're building a **guided onboarding checklist** that appears when a user logs in for
+the first time. It walks them through three core actions — creating a project, inviting
+a teammate, and completing a sample task — with a progress bar and a completion
+celebration.
+
+- Feature 1. First-login modal with a 3-step checklist and progress bar.
+- Feature 2. Per-step completion tracking that persists across sessions.
+- Feature 3. Celebration state on full completion with suggested next actions.
+
+### Out of Scope
+- Persona-specific checklist variants (adds complexity — validate the concept first)
+- Embedded video tutorials (resource-intensive — iterate if completion rates are high)
+- Gamification (badges, points) — nice-to-have for a future phase
+```
+
+**2. Add User Flows or Wireframes (Optional)**
+- **Use:** Design tools (Figma, Sketch), or hand-drawn sketches
+- **When:** For complex features requiring visual explanation
+- **Output:** Embedded in PRD or linked
+
+### Outputs from Phase 5
+
+- **Feature description:** Plain-language explanation for cross-functional teams
+- **Feature list:** Discrete capabilities included in this release
+- **Out of scope:** Explicit exclusions with rationale
+
+---
+
+## Phase 6: Competitive Overview (45 minutes)
+
+**Goal:** Evaluate how key competitors approach this problem and identify the gap or opportunity.
+
+### Activities
+
+**1. Identify Key Competitors**
+- **Scope:** Direct competitors addressing the same user problem, not the entire market
+- **Sources:** G2/Capterra reviews, direct product trials, exit survey data
+
+**2. Fill the Competitive Overview Table**
+- **Format:** For each competitor, document their current approach and the gap or opportunity it reveals for your product.
 
 **Example:**
 
 ```markdown
-## 8. Out of Scope
+## 6. Competitive Overview
 
-**Not included in this release:**
-- **Advanced onboarding personalization** (e.g., different checklists per persona) — Adds complexity, test simple version first
-- **Video tutorials embedded in checklist** — Resource-intensive, validate checklist concept first
-- **Gamification (badges, points)** — Nice-to-have, focus on core workflow guidance
-
-**Future consideration:**
-- Mobile-optimized onboarding (desktop-first for now)
+| Competitor  | Current approach                                      | Gap / opportunity                                      |
+| :---------- | :---------------------------------------------------- | :----------------------------------------------------- |
+| Competitor A | Guided setup wizard (5 steps, mandatory)             | Wizard is blocking — users abandon mid-flow            |
+| Competitor B | Video library on first login                         | Passive — users don't engage; no interactive guidance  |
+| Competitor C | No onboarding; assumes self-service discovery        | High churn; cited in exit surveys as top complaint     |
 ```
 
-**2. Document Dependencies**
-- **Technical dependencies:** Platform upgrades, API changes required
-- **External dependencies:** Third-party integrations, partnerships
-- **Team dependencies:** Design handoff, data pipeline work
+**3. Identify Your Angle**
+- **Question:** What does this competitive landscape tell you about the right approach?
+- **Example:** "Mandatory wizards block exploration. Video libraries are passive. The opportunity is lightweight, dismissible, interactive guidance."
+
+### Outputs from Phase 6
+
+- **Competitive table:** Competitor approach + gap for each
+- **Strategic angle:** What the landscape tells you about how to differentiate
+
+---
+
+## Phase 7: Success and Measurement (30 minutes)
+
+**Goal:** Define the business objective, what you'll measure, and what "done" looks like.
+
+### Activities
+
+**1. Define Business Objective**
+- **Question:** What business outcome does this advance?
+- **Example:** "This supports our Q1 OKR: reduce 30-day churn from 15% to 8%."
+
+**2. Define Success Metrics**
+- **Question:** What will you measure, and what's the baseline?
+- **Examples:**
+  - Activation rate: 40% → 60% (measured 30 days post-launch)
+  - Time-to-first-action: 3 days → 1 day
+  - Support ticket volume: reduce "How do I get started?" tickets by 50%
+
+**3. Define Definition of Done**
+- **Question:** What criteria must be met before this is considered complete and ready for release?
+- **Example:** "Checklist ships to 100% of new signups, activation rate tracking is instrumented, and no regression in sign-up conversion rate."
 
 **Example:**
 
 ```markdown
-## 9. Dependencies & Risks
+## 7. Success and Measurement
 
-### Dependencies
-- **Design:** Wireframes for checklist UI (ETA: Week 1)
-- **Engineering:** No technical dependencies (uses existing modals framework)
-
-### Risks & Mitigations
-- **Risk:** Users dismiss checklist immediately, never see it
-  - **Mitigation:** Track dismissal rate; if >50%, iterate on messaging or timing
-- **Risk:** Checklist steps are too generic, don't resonate with all personas
-  - **Mitigation:** Start with primary persona (Solo Entrepreneur Sam), personalize later
+- **Business objective**: Reduce 30-day churn from 15% to 8% (Q1 retention OKR).
+- **Success metrics**: Activation rate (40% → 60%, measured 30 days post-launch);
+  time-to-first-action (3 days → 1 day); support tickets for "getting started" (−50%).
+- **Definition of done**: Checklist live for 100% of new signups, activation tracking
+  instrumented, sign-up conversion rate not regressed.
 ```
 
-**3. Document Open Questions**
-- **Unresolved decisions:** Areas requiring discovery or discussion
+### Outputs from Phase 7
 
-**Example:**
+- **Business objective:** The outcome this advances
+- **Success metrics:** What to measure, with baselines
+- **Definition of done:** Agreed release criteria
+
+---
+
+## Phase 8: Risks and Open Questions (30 minutes)
+
+**Goal:** Surface what you don't know, what could go wrong, and how you'll address it.
+
+### Activities
+
+**1. Identify Risks**
+- **Format:** For each risk, name it, note its potential impact, and state your mitigation plan.
+- **Example:**
 
 ```markdown
-## 10. Open Questions
+## 8. Risks and Open Questions
 
-- Should checklist be mandatory or optional? (Decision: Optional, dismissible)
-- Should we A/B test checklist vs. no checklist? (Decision: Yes, show to 50% of new users)
-- What happens if user completes steps out of order? (Decision: Allow any order, update checklist dynamically)
+- **Risk:** Users dismiss the checklist immediately and never re-engage with it.
+  - **Mitigation:** Track dismissal rate; if >50%, iterate on timing or copy before scaling.
+- **Risk:** Checklist steps don't resonate with all user types.
+  - **Mitigation:** Start with primary audience (non-technical solopreneurs); personalize in a follow-on phase.
+- **Assumption to validate:** Users who complete the checklist have meaningfully higher
+  30-day retention. Will confirm with cohort analysis 30 days post-launch.
+- **Open question:** Should we A/B test checklist vs. no checklist, or ship to 100%?
+  Decision needed before engineering begins.
 ```
+
+**2. Flag Unresolved Decisions**
+- **What decisions must be made before engineering begins?** Name them explicitly.
+- **What assumptions are you making that haven't been validated?** State them so the team can flag disagreement early.
 
 ### Outputs from Phase 8
 
-- **Out of scope:** What we're NOT building
-- **Dependencies:** What we need before starting
-- **Risks:** Potential blockers and mitigations
-- **Open questions:** Unresolved decisions
+- **Risks:** Named, with impact and mitigation for each
+- **Unvalidated assumptions:** Stated explicitly
+- **Open questions:** Decisions needed before work starts
+
+---
+
+## Phase 9: Level of Effort (30 minutes)
+
+**Goal:** Estimate the size and engineering effort collaboratively across Product, Design, and Engineering DRIs.
+
+### Activities
+
+**1. Size the Work**
+- **Scale:** XS / S / M / L / XL
+- **Who:** PM, Design DRI, and Engineering DRI estimate together — not unilaterally by PM
+- **Format:** T-shirt size + one or two sentences summarizing what drives the estimate
+
+**Example:**
+
+```markdown
+## 9. Level of Effort
+
+**Size**: M. Core checklist logic and session persistence are straightforward using the
+existing modals framework. The main complexity is instrumentation — activation tracking
+requires a new event pipeline. Design is one sprint; engineering is two.
+```
+
+**Tip:** The LOE conversation often surfaces scope assumptions that weren't explicit. If engineering pushes back on size, look first at the Feature Definition and Out of Scope sections — the boundary may need sharpening.
+
+### Outputs from Phase 9
+
+- **T-shirt size:** XS / S / M / L / XL
+- **Effort summary:** What drives the estimate
+
+---
+
+## Phase 10: Ownership & Stakeholders (15 minutes)
+
+**Goal:** Make accountability and communication structure explicit before work begins.
+
+### Activities
+
+**1. Fill the RACI Table**
+- **Accountable:** Single owner. The person who has final say and answers for outcomes.
+- **Responsible:** Those doing the work — typically PM, Eng Lead, and Design Lead.
+- **Consulted:** Those whose input is needed before key decisions are made.
+- **Informed:** Those kept up to date on progress but not in the decision-making loop.
+
+**Example:**
+
+```markdown
+## 10. Ownership & Stakeholders
+
+| Role        | Name(s)              | Notes                                              |
+| :---------- | :------------------- | :------------------------------------------------- |
+| Accountable | Jordan (PM)          | Final decisions on scope and priorities            |
+| Responsible | Jordan, Alex, Sam    | PM, Eng Lead, Design Lead                          |
+| Consulted   | Data, Support, GTM   | Input needed on instrumentation and messaging      |
+| Informed    | Leadership, Marketing| Status updates at milestones, not in daily loop    |
+```
+
+**Tip:** If you have more than one Accountable, you have zero. Resolve before this PRD moves forward.
+
+### Outputs from Phase 10
+
+- **RACI table:** Completed with named individuals
 
 ---
 
@@ -529,25 +517,26 @@ As a new user, I want to receive positive feedback when I complete the checklist
 
 ```
 Day 1:
-├─ Phase 1: Executive Summary (30 min)
+├─ Phase 1: Summary (30 min)
 ├─ Phase 2: Problem Statement (60 min)
 │  └─ Use: skills/problem-statement/SKILL.md
-├─ Phase 3: Target Users & Personas (30 min)
+├─ Phase 3: Target Audience (30 min)
 │  └─ Use: skills/proto-persona/SKILL.md
-└─ Phase 4: Strategic Context (45 min)
-   └─ Use: skills/tam-sam-som-calculator/SKILL.md (optional)
-
-Day 2:
-├─ Phase 5: Solution Overview (60 min)
-│  └─ Use: skills/user-story-mapping-workshop/SKILL.md (optional)
-├─ Phase 6: Success Metrics (30 min)
-└─ Phase 7: User Stories & Requirements (90-120 min)
+└─ Phase 4: User Stories (90-120 min)
    ├─ Use: skills/epic-hypothesis/SKILL.md
    ├─ Use: skills/epic-breakdown-advisor/SKILL.md
    └─ Use: skills/user-story/SKILL.md
 
+Day 2:
+├─ Phase 5: Feature Definition (60 min)
+│  └─ Use: skills/user-story-mapping-workshop/SKILL.md (optional)
+├─ Phase 6: Competitive Overview (45 min)
+└─ Phase 7: Success and Measurement (30 min)
+
 Day 3:
-├─ Phase 8: Out of Scope & Dependencies (30 min)
+├─ Phase 8: Risks and Open Questions (30 min)
+├─ Phase 9: Level of Effort (30 min)
+├─ Phase 10: Ownership & Stakeholders (15 min)
 └─ Review & Refine (60 min)
    └─ Read full PRD, polish, get feedback
 
@@ -571,9 +560,10 @@ Mini example excerpt:
 
 ```markdown
 ## 2. Problem Statement
-- 60% of trial users drop off in first 24 hours
-## 6. Success Metrics
-- Activation rate: 40% → 60%
+- 60% of trial users drop off in first 24 hours, driven by lack of onboarding guidance.
+## 7. Success and Measurement
+- Business objective: Reduce 30-day churn from 15% to 8%.
+- Success metrics: Activation rate 40% → 60%.
 ```
 
 ## Common Pitfalls
@@ -583,7 +573,7 @@ Mini example excerpt:
 
 **Consequence:** No buy-in, team doesn't understand rationale
 
-**Fix:** Collaborate on Phase 7 (user stories) with design + eng; review draft PRD before finalizing
+**Fix:** Collaborate on Phase 4 (user stories) with design + eng; review draft PRD before finalizing
 
 ---
 
@@ -596,7 +586,7 @@ Mini example excerpt:
 
 ---
 
-### Pitfall 3: Solution Too Prescriptive
+### Pitfall 3: Feature Definition Too Prescriptive
 **Symptom:** PRD specifies exact UI, pixel dimensions, button colors
 
 **Consequence:** Removes design collaboration, becomes waterfall spec
@@ -610,16 +600,25 @@ Mini example excerpt:
 
 **Consequence:** Can't validate if feature succeeded
 
-**Fix:** Always define primary metric in Phase 6 (what you're optimizing for)
+**Fix:** Always define business objective and success metrics in Phase 7 (what you're optimizing for)
 
 ---
 
 ### Pitfall 5: Out of Scope Not Documented
-**Symptom:** No section on what's NOT being built
+**Symptom:** No explicit exclusions in the Feature Definition
 
 **Consequence:** Scope creep, stakeholders expect features not planned
 
-**Fix:** Explicitly document out of scope in Phase 8
+**Fix:** Always fill the Out of Scope subsection in Phase 5, with rationale for each exclusion
+
+---
+
+### Pitfall 6: No Accountable Owner
+**Symptom:** RACI table lists two or more people as Accountable
+
+**Consequence:** Decisions stall; no one answers for outcomes
+
+**Fix:** One Accountable, always. Resolve ambiguity before Phase 10 is complete.
 
 ---
 
@@ -637,15 +636,12 @@ Mini example excerpt:
 - `skills/jobs-to-be-done/SKILL.md` (component, optional)
 
 **Phase 4:**
-- `skills/tam-sam-som-calculator/SKILL.md` (interactive, optional)
-
-**Phase 5:**
-- `skills/user-story-mapping-workshop/SKILL.md` (interactive, optional)
-
-**Phase 7:**
 - `skills/epic-hypothesis/SKILL.md` (component)
 - `skills/epic-breakdown-advisor/SKILL.md` (interactive)
 - `skills/user-story/SKILL.md` (component)
+
+**Phase 5:**
+- `skills/user-story-mapping-workshop/SKILL.md` (interactive, optional)
 
 ### External Frameworks
 - Martin Eriksson, "How to Write a Good PRD" (2012) — PRD structure
@@ -660,4 +656,4 @@ Mini example excerpt:
 **Skill type:** Workflow
 **Suggested filename:** `prd-development.md`
 **Suggested placement:** `/skills/workflows/`
-**Dependencies:** Orchestrates 8+ component and interactive skills across 8 phases
+**Dependencies:** Orchestrates 8+ component and interactive skills across 10 phases
