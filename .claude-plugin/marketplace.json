@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "pm-skills",
-      "source": ".",
+      "source": "./",
       "description": "46 battle-tested product management skills — discovery, strategy, finance, career, and more.",
       "category": "product-management",
       "tags": [
