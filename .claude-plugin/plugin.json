@@ -1,0 +1,11 @@
+{
+  "name": "pm-skills",
+  "description": "46 battle-tested product management skills for Claude Code — discovery, strategy, finance, career, and more.",
+  "version": "0.75.0",
+  "author": {
+    "name": "Dean Peters",
+    "email": "dean.peters@productside.com"
+  },
+  "homepage": "https://github.com/Productside/Product-Manager-Skills",
+  "license": "CC-BY-NC-SA-4.0"
+}
