@@ -11,7 +11,7 @@ const PLATFORM_GROUPS = [
         tagline: "Paste, upload, or ZIP — no CLI needed",
         sections: [
           { title: "How skill loading works", content: "Claude.ai has no persistent skill memory between conversations. Loading a skill means getting SKILL.md content into your active context — by pasting it, attaching a file, or uploading a ZIP Claude can read." },
-          { title: "Option 1 — Paste the skill directly", type: "steps", steps: ["Go to github.com/deanpeters/Product-Manager-Skills","Open any skill folder (e.g. skills/user-story/SKILL.md)","Click Raw → Select All → Copy","Start a Claude conversation, paste: \"Read this skill:\" then paste content","Invoke: \"Using the User Story skill, write stories for our checkout flow\""] },
+          { title: "Option 1 — Paste the skill directly", type: "steps", steps: ["Go to github.com/p3ob7o/Product-Manager-Skills","Open any skill folder (e.g. skills/user-story/SKILL.md)","Click Raw → Select All → Copy","Start a Claude conversation, paste: \"Read this skill:\" then paste content","Invoke: \"Using the User Story skill, write stories for our checkout flow\""] },
           { title: "Option 2 — Upload a skill ZIP", type: "steps", steps: ["Clone the repo locally","Run: ./scripts/zip-a-skill.sh --skill user-story","This creates a ZIP in dist/skill-zips/","Attach the ZIP to your Claude.ai message","Say: \"Read the SKILL.md inside this ZIP and apply it to [your task]\""] },
           { title: "Option 3 — Core PM starter pack", type: "steps", steps: ["Run: ./scripts/zip-a-skill.sh --preset core-pm --output dist/skill-zips","Builds a curated ZIP of essential skills","Upload that one ZIP to Claude.ai","All core PM skills are available for the session"] },
           { title: "Invoking a skill", type: "code", code: `"Using the Prioritization Advisor skill, help me pick\n a framework for our Q3 roadmap."\n\n"Run the POL Probe skill on this hypothesis:\n Users abandon checkout because shipping cost surprises them."\n\n"Apply the User Story skill to these epics: [paste epics]"` },
@@ -50,7 +50,7 @@ const PLATFORM_GROUPS = [
         tagline: "Native CLI — the sharpest integration",
         sections: [
           { title: "Why Claude Code is the cleanest fit", content: "Claude Code reads your local filesystem. Skills live in the repo. No uploading, no copy-pasting. Discover via npx, invoke from the CLI, and use CLAUDE.md to keep skills loaded across the entire session." },
-          { title: "Setup", type: "code", code: `git clone https://github.com/deanpeters/Product-Manager-Skills\ncd Product-Manager-Skills\n\nnpm install -g @anthropic-ai/claude-code\n\nnpx skills find prioritization\nnpx skills find --type interactive\nnpx skills add deanpeters/Product-Manager-Skills --list` },
+          { title: "Setup", type: "code", code: `git clone https://github.com/p3ob7o/Product-Manager-Skills\ncd Product-Manager-Skills\n\nnpm install -g @anthropic-ai/claude-code\n\nnpx skills find prioritization\nnpx skills find --type interactive\nnpx skills add p3ob7o/Product-Manager-Skills --list` },
           { title: "Invoking skills", type: "code", code: `claude "Using the PRD Development workflow, create a PRD\n       for our mobile notifications feature"\n\nclaude "Run the Prioritization Advisor — rank these 8 features"\n\nclaude --context skills/pol-probe/SKILL.md \\\n       "Apply this to my hypothesis: [hypothesis]"` },
           { title: "CLAUDE.md — persistent skill loading", type: "steps", steps: ["Create a CLAUDE.md file in your project root","Reference the skills you want always active","Claude Code reads CLAUDE.md automatically at session start","Skills stay loaded for the entire session — no re-pasting"] },
           { title: "CLAUDE.md example", type: "code", code: `# CLAUDE.md\n\n## Active PM Skills\n- skills/user-story/SKILL.md\n- skills/prioritization-advisor/SKILL.md\n- skills/prd-development/SKILL.md\n\n## Project Context\nProduct: Checkout redesign\nTeam: 4 PMs, 2 designers, 8 engineers\nSprint: Epic decomposition for Q2` },
@@ -389,7 +389,7 @@ export default function App() {
           <div style={{ display:"flex", alignItems:"center", gap:"10px" }}>
             <span style={{ fontSize:"11px", fontFamily:"monospace", background:"#E8A020", color:"#0E0E0F", padding:"2px 7px", borderRadius:"3px", fontWeight:"700", letterSpacing:"0.05em" }}>PM SKILLS</span>
             <span style={{ color:"#3A3A40" }}>|</span>
-            <span style={{ fontSize:"12px", color:"#6B6B75", fontFamily:"monospace" }}>deanpeters/Product-Manager-Skills</span>
+            <span style={{ fontSize:"12px", color:"#6B6B75", fontFamily:"monospace" }}>p3ob7o/Product-Manager-Skills</span>
           </div>
           <h1 style={{ margin:"4px 0 0", fontSize:"17px", fontWeight:"700", letterSpacing:"-0.02em", color:"#F0F0F6" }}>How to Install & Use PM Skills</h1>
         </div>
@@ -560,7 +560,7 @@ export default function App() {
                 {platform.sections.map((s, i) => <Section key={i} section={s} />)}
                 <div style={{ marginTop:"28px", padding:"14px", background:"#111113", border:"1px solid #2A2A2E", borderRadius:"6px", fontSize:"12px", color:"#6B6B75" }}>
                   <span style={{ color:"#E8A020", fontFamily:"monospace" }}>→ </span>
-                  Full docs at <span style={{ color:"#9898A6", fontFamily:"monospace" }}>github.com/deanpeters/Product-Manager-Skills</span> — check <span style={{ color:"#9898A6", fontFamily:"monospace" }}>docs/</span> for platform-specific guides.
+                  Full docs at <span style={{ color:"#9898A6", fontFamily:"monospace" }}>github.com/p3ob7o/Product-Manager-Skills</span> — check <span style={{ color:"#9898A6", fontFamily:"monospace" }}>docs/</span> for platform-specific guides.
                 </div>
               </div>
             </div>

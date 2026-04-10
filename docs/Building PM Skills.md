@@ -10,7 +10,7 @@ For contributors working directly from a local clone:
 
 ```bash
 # 1) Clone and enter repo
-git clone https://github.com/deanpeters/Product-Manager-Skills.git
+git clone https://github.com/p3ob7o/Product-Manager-Skills.git
 cd Product-Manager-Skills
 
 # 2) Build a skill (guided wizard)

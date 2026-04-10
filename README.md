@@ -1,207 +1,33 @@
 <a id="pmskills"></a>
-# Product Manager Skills
+# Product Manager Skills (Automattic)
 
-![GitHub stars](https://img.shields.io/github/stars/deanpeters/Product-Manager-Skills?style=flat-square)
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/blob/main/CONTRIBUTING.md)
-[![Version](https://img.shields.io/badge/version-v0.75-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills)
-[![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://github.com/p3ob7o/Product-Manager-Skills/blob/main/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/p3ob7o/Product-Manager-Skills/blob/main/CONTRIBUTING.md)
 ![Skills](https://img.shields.io/badge/skills-46-informational?style=flat-square)
 ![Commands](https://img.shields.io/badge/commands-6-informational?style=flat-square)
-![Streamlit Beta](https://img.shields.io/badge/streamlit-beta-orange?style=flat-square)
 
-```text
-╔════════════════════════════════════════════════════════════════════╗
-║                                                                    ║
-║   ██████╗ ███╗   ███╗    ███████╗██╗  ██╗██╗██╗     ██╗     ███████╗
-║   ██╔══██╗████╗ ████║    ██╔════╝██║ ██╔╝██║██║     ██║     ██╔════╝
-║   ██████╔╝██╔████╔██║    ███████╗█████╔╝ ██║██║     ██║     ███████╗
-║   ██╔═══╝ ██║╚██╔╝██║    ╚════██║██╔═██╗ ██║██║     ██║     ╚════██║
-║   ██║     ██║ ╚═╝ ██║    ███████║██║  ██╗██║███████╗███████╗███████║
-║   ╚═╝     ╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
-║                                                                    ║
-║   46 battle-tested skills + 6 command workflows                    ║
-║   Claude Code • Cursor • Codex  • n8n • OpenClaw • and more ...    ║
-║                                                                    ║
-║   v0.75 • Mar 17, 2026 • CC BY-NC-SA 4.0                           ║
-╚════════════════════════════════════════════════════════════════════╝
-```
+> **Fork notice:** This is a fork of [Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills) by [Dean Peters](https://linkedin.com/in/deanpeters). The original project provides 46 battle-tested PM skills for AI agents. All credit for the foundational work belongs to Dean and the upstream contributors. This fork is licensed under the same [CC BY-NC-SA 4.0](LICENSE) terms as the original.
+
+## Automattic Adaptation
+
+This fork is being **progressively adapted** to align with Automattic's product management practices and frameworks. The upstream skills provide an excellent foundation; the goal here is to tailor them for the specific ways Automattic teams work and for internal tooling conventions.
+
+Changes in this fork may include:
+- Adjusting frameworks and examples to reflect Automattic's product culture
+- Adding skills specific to the WordPress and WooCommerce ecosystem
+- Modifying interactive advisors to account for Automattic's distributed team dynamics
+- Updating references and terminology to match internal conventions
+- Updating and introducing templates aligned with our Product Practice
+
+Upstream changes will be pulled in periodically. Contributions that are generally useful will be proposed back to the original repo.
+
+---
 
 **Help product managers become more awesome at their craft — and help them send the ladder down to others.**
 
 Battle-tested PM frameworks that teach both you and your AI agents how to do product management work at a professional level. You learn the *why*. Your agents execute the *how*. Everyone gets better.
 
 Frame problems, hunt opportunities, scaffold validation experiments, and kill bad bets fast. With frameworks from Teresa Torres, Geoffrey Moore, Amazon, MITRE, and much more from product management's greatest hits.
-
----
-
-## 📣 Updates & Announcements
-
-### Mar 17, 2026 — v0.75 Pedagogic-First: Restoring What This Repo Is Actually For
-
-I want to apologize  to a contributor who recently submitted a well-intentioned and well-coded improvement that stripped learning scaffolding in favor of tighter copy. It wasn't their fault — the docs they read never crisply stated that pedagogic value is non-negotiable. We fixed that. I will work with that contribution to bring in its efficiencies while retaining the learning aspects of the skills.
-
-**What this repo is actually for:** As much as this repo is for adding skills to your agent, it's equally tasked to help product managers become more awesome at their craft, and helping them send the ladder down to others. Skills here serve both goals: they make your agent more capable, and they make you more knowledgeable about why the framework works. Neither is a byproduct of the other.
-
-**ABC — Always Be Coaching** is a key governing principle. Every skill should leave the person using it knowing more than when they started. Stripping explanation to tighten output is a defect, not an improvement.
-
-What changed in v0.75:
-- `README.md` — Mission statement updated to name both audiences: human PMs and AI agents
-- `CONTRIBUTING.md` — New Design Philosophy section so contributors know what they're protecting
-- `CLAUDE.md` — Pedagogic-first added to the agent's mandate, not just the style guide
-- `AGENTS.md` — New Operating Philosophy section so coding agents don't optimize away the teaching
-
-Release note: [`docs/announcements/2026-03-17-v0-75-pedagogic-first.md`](docs/announcements/2026-03-17-v0-75-pedagogic-first.md)
-
-**Now available:** Install skills individually from Claude Code via the plugin marketplace:
-```bash
-# Add the marketplace source
-/plugin marketplace add deanpeters/Product-Manager-Skills
-
-# Install a single skill
-/plugin install jobs-to-be-done@pm-skills
-
-# Or install everything at once
-/plugin install pm-skills-bundle@pm-skills
-```
-
----
-
-### Mar 9, 2026 — v0.7 Sharper Skills, Faster Discovery
-
-This release is about making the library easier to trust and easier to use.
-
-As this repo grows, the standard has to rise with it. So v0.7 focuses on the parts users actually feel:
-- finding the right skill faster,
-- understanding when to use it,
-- getting cleaner activation behavior,
-- and trusting that the repo is being actively tightened, not just expanded.
-
-#### Why it matters:
-1. You spend less time guessing which skill to use.
-2. Skills are more likely to show up in the situations where you actually need them.
-3. The library becomes easier to navigate as it grows, not more chaotic.
-4. Quality becomes a maintained promise, not a one-time cleanup.
-
-#### What shipped:
-- Trigger-oriented description updates across the skill library so skills answer both "what it does" and "use this when..."
-- New `intent` frontmatter field so every skill can keep a sharp trigger description and a richer deeper-purpose summary
-- New trigger-readiness auditing in `scripts/check-skill-triggers.py`
-- Trigger checks wired into `scripts/test-library.sh`
-- New `find-a-skill.sh --mode trigger` for discovering skills by use-case language, `best_for`, and `scenarios`
-- New Streamlit (beta) `Find My Skill` mode so users can describe a situation in plain English and get recommended skills with clear next actions
-- Streamlit navigation now separates `Learn`, `Find My Skill`, and `Run Skills` so first-time users can move from confusion to action faster
-- Contributor docs updated so future skills follow the same tighter standard
-- Cross-checked the tighter standard against Anthropic's [Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf)
-
-Release note: [`docs/announcements/2026-03-09-v0-7-skill-quality-trigger-clarity.md`](docs/announcements/2026-03-09-v0-7-skill-quality-trigger-clarity.md)
-
----
-
-### Mar 8, 2026 — v0.65 You Asked, We Listened: Setup + Integration Everywhere
-
-You asked, we listened. We took a moment to create comprehensive instructions on how to install, integrate, or otherwise use any one or all of these skills.
-
-What shipped:
-- `docs/Using PM Skills 101.md` as the complete beginner-first guide
-- `docs/Platform Guides for PMs.md` as the pick-your-tool index
-- `docs/Using PM Skills with Slash Commands 101.md` for Claude `/slash` workflows like `/pm-story` and `/pm-prd`
-- New PM-friendly platform docs for Claude Code, Claude Desktop, Claude Cowork, ChatGPT Desktop, OpenClaw, n8n, LangFlow, and Python agents
-- Updated `START_HERE.md` with comfort-level paths (chat-first, terminal-first, automation-first)
-
-How to make the best use of this release:
-1. Start with [`docs/Using PM Skills 101.md`](docs/Using%20PM%20Skills%20101.md)
-2. Choose your platform in [`docs/Platform Guides for PMs.md`](docs/Platform%20Guides%20for%20PMs.md)
-3. Run one real task with one skill before scaling to multi-skill workflows
-
-Release note: [`docs/announcements/2026-03-08-v0-65-onboarding-integration-guides.md`](docs/announcements/2026-03-08-v0-65-onboarding-integration-guides.md)
-
----
-
-### Mar 6, 2026 — v0.6 Navigation + Commands
-
-We added a command layer and fast navigation system while keeping skills as the source of truth.
-
-What shipped:
-- `START_HERE.md` for 60-second onboarding
-- `commands/` directory with reusable multi-skill workflows
-- `catalog/` generated indexes for quick browsing
-- New helper scripts: `run-pm.sh`, `find-a-command.sh`, `test-library.sh`, and `generate-catalog.py`
-- Command validation with `scripts/check-command-metadata.py`
-
-Release note draft: [`docs/announcements/2026-03-06-v0-6-navigation-commands.md`](docs/announcements/2026-03-06-v0-6-navigation-commands.md)
-
----
-
-### Feb 27, 2026 — v0.5 Streamlit (beta) Playground
-
-We launched a new **Streamlit (beta)** interface for local skill test-driving.
-
-What shipped:
-- Local playground at `app/main.py` with guided browsing and session flows
-- Multi-provider support (Anthropic, OpenAI, Ollama) with provider/model picker
-- Environment-variable-only API handling (`app/.env.example`) for safer defaults
-- Workflow UX upgrades (phase detection fix, per-phase output persistence, run-all phases control)
-- Fast-model quality warnings on long workflows (especially PRD-style runs)
-
-Docs:
-- [`app/STREAMLIT_INTERFACE.md`](app/STREAMLIT_INTERFACE.md)
-- [`app/.env.example`](app/.env.example)
-
-Feedback welcome:
-- [GitHub Issues](https://github.com/deanpeters/Product-Manager-Skills/issues)
-- [Dean on LinkedIn](https://linkedin.com/in/deanpeters)
-
----
-
-<a id="leaderskills"></a>
-### Feb 27, 2026 — v0.5 Career & Leadership Skills Suite
-
-Four new skills covering the full product leadership career arc — from PM to Director to VP/CPO — distilled from two episodes of [The Product Porch](https://the-product-porch-43ca35c0.simplecast.com) podcast.
-
-**Based on Episode 42 — [From PM to Director: How to Make the Shift (Part 1)](https://the-product-porch-43ca35c0.simplecast.com/episodes/from-product-manager-to-director-how-to-make-the-shift-part-1):**
-- [`altitude-horizon-framework`](skills/altitude-horizon-framework/SKILL.md) (Component) — The core mental model: altitude (scope) and horizon (time), the waiter-to-operator shift, four transition zones, named failure modes, and the Cascading Context Map
-- [`director-readiness-advisor`](skills/director-readiness-advisor/SKILL.md) (Interactive) — Coaches PMs and new Directors across four situations: preparing, interviewing, newly landed, and recalibrating
-
-**Based on Episode 43 — [Becoming a VP & CPO: Leading Product at the Executive Level (Part 2)](https://the-product-porch-43ca35c0.simplecast.com/episodes/becoming-a-vp-cpo-leading-product-at-the-executive-level-part-2):**
-- [`executive-onboarding-playbook`](skills/executive-onboarding-playbook/SKILL.md) (Workflow) — A 30-60-90 day diagnostic playbook for VP/CPO transitions: diagnose before acting, surface unwritten strategy, assess people, act with evidence
-- [`vp-cpo-readiness-advisor`](skills/vp-cpo-readiness-advisor/SKILL.md) (Interactive) — Coaches Directors and executives through the VP/CPO transition, including the CEO interview framework for evaluating roles before accepting
-
----
-
-### Feb 10, 2026 — v0.4 Facilitation Protocol Fix
-
-We found and fixed a facilitation regression in interactive flows.
-
-What happened:
-- We expected guided, step-by-step facilitation with progressive context handling.
-- In practice, a brevity-focused rewrite path stripped out parts of the original facilitation modality (especially the "walk through questions" behavior).
-
-What we changed in v0.4:
-- Standardized a canonical facilitation protocol in [`skills/workshop-facilitation/SKILL.md`](skills/workshop-facilitation/SKILL.md).
-- Rolled that source-of-truth linkage across interactive skills and facilitation-heavy workflow skills.
-- Added mandatory session heads-up, `Context dump` bypass, and `Best guess` mode.
-- Added stronger progress labels, interruption handling, and decision-point recommendation rules.
-
-Credit:
-- Codex identified the protocol mismatch and implemented the fix across the repo.
-
-Announcement draft: [`docs/announcements/2026-02-10-v0-4-facilitation-fix.md`](docs/announcements/2026-02-10-v0-4-facilitation-fix.md)
-
----
-
-### Feb 8, 2026 — LinkedIn Launch
-
-**Post title:** Product Management Skills for Your Agents
-**Subtitle:** Because "just prompt better" is not a strategy.
-
-Still rewriting PM prompts and getting generic AI output? I built a reusable PM Skills repo to help you make sharper decisions, docs, and outcomes faster.
-
-- Full announcement draft: [`docs/announcements/2026-02-08-linkedin-launch.md`](docs/announcements/2026-02-08-linkedin-launch.md)
-- Substack article draft: [`docs/announcements/2026-02-08-substack-savage-launch.md`](docs/announcements/2026-02-08-substack-savage-launch.md)
-- Announcements index: [`docs/announcements/README.md`](docs/announcements/README.md)
-- Skills repo: [Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills)
-- Prior prompts repo: [Product Manager Prompts](https://github.com/deanpeters/product-manager-prompts)
 
 ---
 
@@ -289,7 +115,7 @@ What you can do in v0.7:
 - `Find My Skill` by describing your situation in plain English
 - `Run Skills` with your own scenario once you know what you want
 
-This beta interface is a feature in flight. Feedback is welcome via [GitHub Issues](https://github.com/deanpeters/Product-Manager-Skills/issues) or [LinkedIn](https://linkedin.com/in/deanpeters).
+This beta interface is a feature in flight. Feedback is welcome via [GitHub Issues](https://github.com/p3ob7o/Product-Manager-Skills/issues).
 
 ---
 
@@ -573,7 +399,7 @@ Command definitions live in [`commands/`](commands/README.md), and generated bro
 
 ```bash
 # Install a single skill from the plugin marketplace
-/plugin marketplace add deanpeters/Product-Manager-Skills
+/plugin marketplace add p3ob7o/Product-Manager-Skills
 /plugin install prd-development@pm-skills
 
 # Or use the cloned repo directly
@@ -581,7 +407,7 @@ cd product-manager-skills
 claude "Using the PRD Development workflow, create a PRD for our mobile feature"
 ```
 
-You can discover via `npx skills find <query>` and `npx skills add deanpeters/Product-Manager-Skills --list`, then install for Claude Code. See [Using PM Skills with Claude](docs/Using%20PM%20Skills%20with%20Claude.md).
+You can discover via `npx skills find <query>` and `npx skills add p3ob7o/Product-Manager-Skills --list`, then install for Claude Code. See [Using PM Skills with Claude](docs/Using%20PM%20Skills%20with%20Claude.md).
 
 ### With OpenAI Codex
 
@@ -747,9 +573,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ## 📖 Related Resources
 
-- **[Product Manager Prompts](https://github.com/deanpeters/product-manager-prompts)** — Task-specific prompts for ChatGPT, Claude, Gemini
+- **[Original Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills)** — The upstream repo this fork is based on
+- **[Product Manager Prompts](https://github.com/deanpeters/product-manager-prompts)** — Task-specific prompts for ChatGPT, Claude, Gemini (by Dean Peters)
 - **[Productside](https://productside.com)** — AI-powered product management training and consulting
-- **[Dean's LinkedIn](https://linkedin.com/in/deanpeters)** — Essays on AI-amplified product work
 
 ---
 
@@ -763,61 +589,11 @@ See [LICENSE](LICENSE) for full details.
 
 ## 📞 Questions?
 
-- **GitHub Issues:** [Report bugs or suggest features](https://github.com/deanpeters/Product-Manager-Skills/issues)
-- **LinkedIn:** [Connect with Dean Peters](https://linkedin.com/in/deanpeters)
-- **Productside:** [Learn more about AI PM consulting](https://productside.com)
+- **Fork issues:** [Report bugs or suggest features for this fork](https://github.com/p3ob7o/Product-Manager-Skills/issues)
+- **Upstream project:** [Original Product Manager Skills by Dean Peters](https://github.com/deanpeters/Product-Manager-Skills)
 
 ---
 
-**v0.7 — March 9, 2026**
-
-Highlights in this release:
-- Tightened skill descriptions so they communicate both what the skill does and when to use it
-- Added `intent` as a repo-standard frontmatter field to separate trigger metadata from deeper purpose
-- Added `scripts/check-skill-triggers.py` and wired trigger-readiness auditing into `test-library.sh`
-- Added `find-a-skill.sh --mode trigger` so users can discover skills through `description`, `best_for`, and `scenarios`
-- Added a Streamlit (beta) `Find My Skill` mode with plain-English discovery, recommended-first results, and direct preview/run actions
-- Updated authoring docs and templates so the stronger metadata standard sticks
-
-**v0.65 — March 8, 2026**
-
-Highlights in this release:
-- Added comprehensive PM-first onboarding and setup guide: `docs/Using PM Skills 101.md`
-- Added platform chooser: `docs/Platform Guides for PMs.md`
-- Added slash-command playbook: `docs/Using PM Skills with Slash Commands 101.md`
-- Added and linked practical platform docs for Claude Code/Desktop/Cowork, ChatGPT Desktop, OpenClaw, n8n, LangFlow, and Python agents
-- Updated `START_HERE.md` and docs navigation so new users can pick the right setup path faster
-
-**v0.6 — March 6, 2026**
-
-Highlights in this release:
-- Added `commands/` with reusable workflow wrappers over local skills (`discover`, `strategy`, `write-prd`, `plan-roadmap`, `prioritize`, `leadership-transition`)
-- Added `START_HERE.md` for 60-second onboarding
-- Added generated `catalog/` artifacts for fast skill and command navigation
-- Added tooling for discovery/validation/execution: `find-a-command.sh`, `run-pm.sh`, `check-command-metadata.py`, `test-library.sh`, `generate-catalog.py`
-
-**v0.5 — February 27, 2026**
-
-Highlights in this release:
-- Added 4 Career & Leadership skills distilled from The Product Porch episodes on PM→Director and Director→VP/CPO transitions
-- Launched Streamlit (beta) local playground in `app/` with multi-provider/model selection
-- Improved workflow UX in beta app: phase detection, explicit run controls, and per-phase output tracking
-
-**v0.4 — February 10, 2026**
-
-Highlights in this release:
-- Fixed a facilitation protocol regression where brevity-focused rewrites could remove expected guided-question behavior
-- Promoted `workshop-facilitation` to canonical source of truth for interactive facilitation
-- Added consistent opening heads-up, context-dump bypass path, and best-guess mode
-- Applied protocol linkage across interactive skills and facilitation-heavy workflow skills
-
-**v0.3 — February 9, 2026**
-
-Highlights in this release:
-- 42 total skills, including Phase 7 finance skills and the new `skill-authoring-workflow`
-- New skill tooling: `add-a-skill`, `build-a-skill`, `find-a-skill`, `test-a-skill`, `zip-a-skill`
-- New onboarding docs for Claude, Codex, ChatGPT, and non-technical "rule-of-thumb" setup
-
-Built by Dean Peters (Principal Consultant and Trainer at Productside.com) with Anthropic Claude and OpenAI Codex.
+Originally built by [Dean Peters](https://linkedin.com/in/deanpeters) (Principal Consultant and Trainer at [Productside](https://productside.com)) with Anthropic Claude and OpenAI Codex. This fork is maintained for Automattic's internal product management use.
 
 *Helping product managers work smarter with AI.*

@@ -837,7 +837,7 @@ def render_sidebar(skill: dict | None = None):
         st.divider()
         st.caption("Streamlit (beta) · New feature in flight")
         st.caption(
-            "[Feedback via GitHub ↗](https://github.com/deanpeters/Product-Manager-Skills/issues) · "
+            "[Feedback via GitHub ↗](https://github.com/p3ob7o/Product-Manager-Skills/issues) · "
             "[Connect on LinkedIn ↗](https://linkedin.com/in/deanpeters)"
         )
         st.caption("46 PM skills · CC BY-NC-SA 4.0")

@@ -1,6 +1,6 @@
 # Using PM Skills 101
 
-**Repository:** [deanpeters/Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills)
+**Repository:** [p3ob7o/Product-Manager-Skills](https://github.com/p3ob7o/Product-Manager-Skills)
 **Skills available:** 46 | **Version:** 0.65 | **Works with:** Claude, Codex, ChatGPT, Cowork, n8n, LangFlow, Lovable, OpenClaw, Cursor, Windsurf, Bolt, Replit, Make.com, Devin, CrewAI, Gemini
 
 ---
@@ -59,7 +59,7 @@ Skills are organized into three tiers that build on each other.
 **What "loading a skill" means here:** Claude.ai has no persistent skill memory between conversations by default. Loading a skill means getting the `SKILL.md` content into your active context — by pasting it, attaching it as a file, or uploading a ZIP Claude can read.
 
 #### Option 1 — Paste the skill directly
-1. Go to `github.com/deanpeters/Product-Manager-Skills`
+1. Go to `github.com/p3ob7o/Product-Manager-Skills`
 2. Open any skill folder (e.g. `skills/user-story/SKILL.md`)
 3. Click **Raw** → Select All → Copy
 4. Start a Claude conversation and paste: `"Read this skill:"` then paste the content
@@ -102,7 +102,7 @@ If you want one-command shortcuts like `/pm-story` and `/pm-prd`, also see [`Usi
 #### Setup
 ```bash
 # Clone the repo
-git clone https://github.com/deanpeters/Product-Manager-Skills
+git clone https://github.com/p3ob7o/Product-Manager-Skills
 cd Product-Manager-Skills
 
 # Install Claude Code
@@ -113,7 +113,7 @@ npx skills find prioritization
 npx skills find --type interactive
 
 # Add from this repo
-npx skills add deanpeters/Product-Manager-Skills --list
+npx skills add p3ob7o/Product-Manager-Skills --list
 ```
 
 #### Invoking skills from the CLI
@@ -254,7 +254,7 @@ When given an epic, generate formatted user stories with Gherkin acceptance crit
 ```
 // HTTP Request node:
 Method: GET
-URL: https://raw.githubusercontent.com/deanpeters/Product-Manager-Skills/main/skills/user-story/SKILL.md
+URL: https://raw.githubusercontent.com/p3ob7o/Product-Manager-Skills/main/skills/user-story/SKILL.md
 
 // AI Agent node System Prompt:
 "Apply this skill framework: " + {{ $node['FetchSkill'].json.data }}
@@ -624,7 +624,7 @@ Detailed guide: [`Using PM Skills with Make.com.md`](Using%20PM%20Skills%20with%
 #### Method 2 — Fetch skill dynamically via HTTP module
 1. Add an **HTTP → Make a Request** module at the start of your scenario
 2. Set Method: `GET`
-3. URL: `https://raw.githubusercontent.com/deanpeters/Product-Manager-Skills/main/skills/user-story/SKILL.md`
+3. URL: `https://raw.githubusercontent.com/p3ob7o/Product-Manager-Skills/main/skills/user-story/SKILL.md`
 4. Store the response body as a variable
 5. In your AI module's System Prompt: `Apply this skill: {{skill_content}}`
 
@@ -832,7 +832,7 @@ Skills can be referenced via the Gemini sidebar in Google Workspace apps:
 
 ## More Resources
 
-- **Full docs:** `github.com/deanpeters/Product-Manager-Skills/docs/`
+- **Full docs:** `github.com/p3ob7o/Product-Manager-Skills/docs/`
 - **Platform-specific guide index:** `docs/Platform Guides for PMs.md`
 - **Slash command guide (Claude Code):** `docs/Using PM Skills with Slash Commands 101.md`
 - **Core platform guides:** `docs/Using PM Skills with Claude.md`, `docs/Using PM Skills with Codex.md`, `docs/Using PM Skills with ChatGPT.md`

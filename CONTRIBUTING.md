@@ -88,7 +88,7 @@ Not ready to write? That's fine—share ideas:
 3. We'll review and format it for you
 
 **Option 2: Open a GitHub Issue**
-1. Go to the [Issues tab](https://github.com/deanpeters/Product-Manager-Skills/issues)
+1. Go to the [Issues tab](https://github.com/p3ob7o/Product-Manager-Skills/issues)
 2. Click "New Issue"
 3. Describe your suggestion:
    - **For new skills:** What's the framework? When would a PM use it?

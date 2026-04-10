@@ -33,7 +33,7 @@ Use the uploaded prioritization-advisor skill to recommend a framework for our Q
 If your plan supports GitHub connections, ask ChatGPT to use skill files directly from this repo.
 
 ```text
-Use skills/prd-development/SKILL.md from deanpeters/Product-Manager-Skills to draft a PRD for improving onboarding completion.
+Use skills/prd-development/SKILL.md from p3ob7o/Product-Manager-Skills to draft a PRD for improving onboarding completion.
 ```
 
 ## How To Keep Output Quality High
