@@ -1,22 +1,23 @@
 <a id="pmskills"></a>
-# Product Manager Skills (Automattic Fork)
+# Product Manager Skills (Automattic)
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://github.com/p3ob7o/Product-Manager-Skills/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/p3ob7o/Product-Manager-Skills/blob/main/CONTRIBUTING.md)
 ![Skills](https://img.shields.io/badge/skills-46-informational?style=flat-square)
 ![Commands](https://img.shields.io/badge/commands-6-informational?style=flat-square)
 
-> **Fork notice:** This is a fork of [Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills) by [Dean Peters](https://linkedin.com/in/deanpeters) (Principal Consultant and Trainer at [Productside](https://productside.com)). The original project provides 46 battle-tested PM skills for AI agents. All credit for the foundational work belongs to Dean and the upstream contributors. This fork is licensed under the same [CC BY-NC-SA 4.0](LICENSE) terms as the original.
+> **Fork notice:** This is a fork of [Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills) by [Dean Peters](https://linkedin.com/in/deanpeters). The original project provides 46 battle-tested PM skills for AI agents. All credit for the foundational work belongs to Dean and the upstream contributors. This fork is licensed under the same [CC BY-NC-SA 4.0](LICENSE) terms as the original.
 
 ## Automattic Adaptation
 
-This fork is being **progressively adapted** to align with Automattic's product management practices and frameworks. The upstream skills provide an excellent foundation; the goal here is to tailor them for the specific ways Automattic teams work — distributed-first workflows, WordPress/Woo ecosystem context, and internal tooling conventions.
+This fork is being **progressively adapted** to align with Automattic's product management practices and frameworks. The upstream skills provide an excellent foundation; the goal here is to tailor them for the specific ways Automattic teams work and for internal tooling conventions.
 
 Changes in this fork may include:
 - Adjusting frameworks and examples to reflect Automattic's product culture
 - Adding skills specific to the WordPress and WooCommerce ecosystem
 - Modifying interactive advisors to account for Automattic's distributed team dynamics
 - Updating references and terminology to match internal conventions
+- Updating and introducing templates aligned with our Product Practice
 
 Upstream changes will be pulled in periodically. Contributions that are generally useful will be proposed back to the original repo.
 
