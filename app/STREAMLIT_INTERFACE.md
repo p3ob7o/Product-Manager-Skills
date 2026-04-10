@@ -2,7 +2,7 @@
 
 A local web app for **learning PM Skills setup/integration**, **finding the right skill for a situation**, and **test-driving PM skills** against available LLM APIs.
 
-**Status:** Streamlit (beta). This is a new feature in flight and we are actively testing and refining it. Feedback is welcome via [GitHub Issues](https://github.com/deanpeters/Product-Manager-Skills/issues) or [LinkedIn](https://linkedin.com/in/deanpeters).
+**Status:** Streamlit (beta). This is a new feature in flight and we are actively testing and refining it. Feedback is welcome via [GitHub Issues](https://github.com/p3ob7o/Product-Manager-Skills/issues) or [LinkedIn](https://linkedin.com/in/deanpeters).
 
 **Pedagogic goal:** Lower the barrier from "I've heard about this skill" to "I've seen it work in my context." The app now supports three paths:
 - **Learn** for setup and integration guidance

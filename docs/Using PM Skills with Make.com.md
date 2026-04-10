@@ -28,7 +28,7 @@ Make.com is a strong fit for repeatable, no-code PM automation workflows.
 3. Inject that response into the AI system prompt.
 
 Example raw URL pattern:
-`https://raw.githubusercontent.com/deanpeters/Product-Manager-Skills/main/skills/user-story/SKILL.md`
+`https://raw.githubusercontent.com/p3ob7o/Product-Manager-Skills/main/skills/user-story/SKILL.md`
 
 ## Common Scenario Pattern
 

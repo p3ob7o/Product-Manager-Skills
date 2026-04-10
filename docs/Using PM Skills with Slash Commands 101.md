@@ -1,7 +1,7 @@
 # Using PM Skills with Slash Commands 101
 
 **Applies to:** Claude Code (primary) · Cursor · Windsurf · Gemini CLI
-**Repository:** [deanpeters/Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills)
+**Repository:** [p3ob7o/Product-Manager-Skills](https://github.com/p3ob7o/Product-Manager-Skills)
 
 If you are new to PM Skills, start with [`Using PM Skills 101.md`](Using%20PM%20Skills%20101.md) first.
 
@@ -386,7 +386,7 @@ Router: detects "/pm-story" → loads user-story skill → executes
 ### Setup in 3 Steps
 ```bash
 # 1. Clone the skills repo
-git clone https://github.com/deanpeters/Product-Manager-Skills
+git clone https://github.com/p3ob7o/Product-Manager-Skills
 
 # 2. Create the commands folder in your project
 mkdir -p .claude/commands
@@ -400,7 +400,7 @@ cp /path/to/commands/pm-story.md .claude/commands/
 
 ## More Resources
 
-- **Skills repo:** `github.com/deanpeters/Product-Manager-Skills`
+- **Skills repo:** `github.com/p3ob7o/Product-Manager-Skills`
 - **Claude Code docs:** `docs.anthropic.com/claude-code`
 - **CLAUDE.md reference:** `docs/Using PM Skills with Claude.md` in the skills repo
 - **AGENTS.md:** multi-agent orchestration patterns (repo root)
