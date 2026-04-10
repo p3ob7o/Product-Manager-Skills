@@ -5,14 +5,14 @@
     "email": "dean.peters@productside.com"
   },
   "metadata": {
-    "description": "46 battle-tested product management skills for Claude Code — discovery, strategy, finance, career, and more.",
+    "description": "46 battle-tested product management skills for Claude Code — install individually or as a bundle.",
     "version": "0.75.0"
   },
   "plugins": [
     {
-      "name": "pm-skills",
+      "name": "pm-skills-bundle",
       "source": "./",
-      "description": "46 battle-tested product management skills — discovery, strategy, finance, career, and more.",
+      "description": "All 46 PM skills at once — discovery, strategy, finance, career, and more.",
       "category": "product-management",
       "tags": [
         "pm",
@@ -23,7 +23,655 @@
         "career",
         "prd",
         "user-stories",
+        "roadmap",
+        "bundle"
+      ],
+      "strict": false
+    },
+    {
+      "name": "acquisition-channel-advisor",
+      "source": "./skills/acquisition-channel-advisor/",
+      "description": "Evaluate acquisition channels using unit economics, customer quality, and scalability. Use when deciding whether to scale, test, or kill a growth channel.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive"
+      ],
+      "strict": false
+    },
+    {
+      "name": "ai-shaped-readiness-advisor",
+      "source": "./skills/ai-shaped-readiness-advisor/",
+      "description": "Assess whether your product work is AI-first or AI-shaped. Use when evaluating AI maturity and choosing the next team capability to build.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "ai",
+        "agents"
+      ],
+      "strict": false
+    },
+    {
+      "name": "altitude-horizon-framework",
+      "source": "./skills/altitude-horizon-framework/",
+      "description": "Understand the PM-to-Director transition through altitude and horizon thinking. Use when diagnosing scope, time-horizon, or leadership-level gaps.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "career",
+        "leadership"
+      ],
+      "strict": false
+    },
+    {
+      "name": "business-health-diagnostic",
+      "source": "./skills/business-health-diagnostic/",
+      "description": "Diagnose SaaS business health across growth, retention, efficiency, and capital. Use when preparing a business review or prioritizing urgent fixes.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "finance",
+        "saas",
+        "metrics"
+      ],
+      "strict": false
+    },
+    {
+      "name": "company-research",
+      "source": "./skills/company-research/",
+      "description": "Create a company research brief with executive quotes, product strategy, and org context. Use when preparing for interviews, competitive analysis, partnerships, or market-entry work.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "research",
+        "analysis"
+      ],
+      "strict": false
+    },
+    {
+      "name": "context-engineering-advisor",
+      "source": "./skills/context-engineering-advisor/",
+      "description": "Diagnose context stuffing vs. context engineering. Use when an AI workflow feels bloated, brittle, or hard to steer reliably.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "ai",
+        "agents"
+      ],
+      "strict": false
+    },
+    {
+      "name": "customer-journey-map",
+      "source": "./skills/customer-journey-map/",
+      "description": "Create a customer journey map across stages, touchpoints, actions, emotions, and metrics. Use when diagnosing a broken experience or aligning a team on the full customer flow.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "workshop",
+        "facilitation",
+        "discovery",
+        "ux"
+      ],
+      "strict": false
+    },
+    {
+      "name": "customer-journey-mapping-workshop",
+      "source": "./skills/customer-journey-mapping-workshop/",
+      "description": "Run a customer journey mapping workshop with adaptive questions and outputs. Use when you need to map stages, actions, emotions, pain points, and opportunities for a persona and scenario.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "discovery",
+        "ux",
+        "workshop",
+        "facilitation"
+      ],
+      "strict": false
+    },
+    {
+      "name": "director-readiness-advisor",
+      "source": "./skills/director-readiness-advisor/",
+      "description": "Guide the PM-to-Director transition across preparing, interviewing, landing, and recalibrating. Use when leadership scope is changing and you need practical coaching.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "career",
+        "leadership"
+      ],
+      "strict": false
+    },
+    {
+      "name": "discovery-interview-prep",
+      "source": "./skills/discovery-interview-prep/",
+      "description": "Plan customer discovery interviews with the right goal, segment, constraints, and method. Use when preparing interviews for problem validation, churn research, or new product ideas.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "discovery",
+        "research"
+      ],
+      "strict": false
+    },
+    {
+      "name": "discovery-process",
+      "source": "./skills/discovery-process/",
+      "description": "Run a full discovery cycle from problem hypothesis to validated solution. Use when a team needs a structured path through framing, interviews, synthesis, and experiments.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "workflow",
+        "discovery",
+        "research"
+      ],
+      "strict": false
+    },
+    {
+      "name": "eol-message",
+      "source": "./skills/eol-message/",
+      "description": "Write a clear, empathetic EOL announcement with rationale, customer impact, and next steps. Use when retiring a product, feature, or plan without creating avoidable confusion.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "lifecycle"
+      ],
+      "strict": false
+    },
+    {
+      "name": "epic-breakdown-advisor",
+      "source": "./skills/epic-breakdown-advisor/",
+      "description": "Break down epics into user stories with Humanizing Work split patterns. Use when a backlog item is too large to estimate, sequence, or deliver safely.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "user-stories",
+        "backlog"
+      ],
+      "strict": false
+    },
+    {
+      "name": "epic-hypothesis",
+      "source": "./skills/epic-hypothesis/",
+      "description": "Frame an epic as a testable hypothesis with target user, expected outcome, and validation method. Use when defining a major initiative before roadmap, discovery, or delivery planning.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "user-stories",
+        "backlog"
+      ],
+      "strict": false
+    },
+    {
+      "name": "executive-onboarding-playbook",
+      "source": "./skills/executive-onboarding-playbook/",
+      "description": "Plan a VP or CPO 30-60-90 day diagnostic onboarding path. Use when entering a new executive product role and avoiding premature change.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "workflow",
+        "career",
+        "leadership"
+      ],
+      "strict": false
+    },
+    {
+      "name": "feature-investment-advisor",
+      "source": "./skills/feature-investment-advisor/",
+      "description": "Evaluate feature investments using revenue impact, cost structure, ROI, and strategy. Use when deciding whether a feature deserves investment.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive"
+      ],
+      "strict": false
+    },
+    {
+      "name": "finance-based-pricing-advisor",
+      "source": "./skills/finance-based-pricing-advisor/",
+      "description": "Evaluate pricing changes using ARPU, conversion, churn risk, NRR, and payback. Use when deciding whether a pricing move should ship.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "finance",
+        "saas",
+        "pricing"
+      ],
+      "strict": false
+    },
+    {
+      "name": "finance-metrics-quickref",
+      "source": "./skills/finance-metrics-quickref/",
+      "description": "Look up SaaS finance metrics, formulas, and benchmarks fast. Use when you need a quick metric definition, formula, or benchmark during analysis.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "finance",
+        "saas"
+      ],
+      "strict": false
+    },
+    {
+      "name": "jobs-to-be-done",
+      "source": "./skills/jobs-to-be-done/",
+      "description": "Uncover customer jobs, pains, and gains in a structured JTBD format. Use when clarifying unmet needs, repositioning a product, or improving discovery and messaging.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "discovery",
+        "frameworks"
+      ],
+      "strict": false
+    },
+    {
+      "name": "lean-ux-canvas",
+      "source": "./skills/lean-ux-canvas/",
+      "description": "Guide teams through Lean UX Canvas v2. Use when framing a business problem, surfacing assumptions, and defining what to learn next.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "frameworks",
+        "ux"
+      ],
+      "strict": false
+    },
+    {
+      "name": "opportunity-solution-tree",
+      "source": "./skills/opportunity-solution-tree/",
+      "description": "Build an Opportunity Solution Tree from outcomes to opportunities, solutions, and tests. Use when a stakeholder request needs problem framing before you decide what to build.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "discovery",
+        "frameworks"
+      ],
+      "strict": false
+    },
+    {
+      "name": "pestel-analysis",
+      "source": "./skills/pestel-analysis/",
+      "description": "Analyze political, economic, social, technological, environmental, and legal forces. Use when external market shifts could materially affect a product, roadmap, or strategy.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "strategy",
+        "analysis"
+      ],
+      "strict": false
+    },
+    {
+      "name": "pol-probe-advisor",
+      "source": "./skills/pol-probe-advisor/",
+      "description": "Select the right Proof of Life (PoL) probe based on hypothesis, risk, and resources. Use this to match the validation method to the real learning goal, not tooling comfort.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "validation",
+        "experiments"
+      ],
+      "strict": false
+    },
+    {
+      "name": "pol-probe",
+      "source": "./skills/pol-probe/",
+      "description": "Define a Proof of Life probe to test a risky hypothesis cheaply. Use when you need harsh truth before building real product.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "validation",
+        "experiments"
+      ],
+      "strict": false
+    },
+    {
+      "name": "positioning-statement",
+      "source": "./skills/positioning-statement/",
+      "description": "Create a Geoffrey Moore-style positioning statement. Use when clarifying who you serve, what problem you solve, your category, and why you're different from alternatives.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "strategy",
+        "positioning"
+      ],
+      "strict": false
+    },
+    {
+      "name": "positioning-workshop",
+      "source": "./skills/positioning-workshop/",
+      "description": "Run a positioning workshop that surfaces target customer, unmet need, category, benefits, and differentiation. Use when your product messaging feels fuzzy, generic, or misaligned.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "strategy",
+        "positioning",
+        "workshop",
+        "facilitation"
+      ],
+      "strict": false
+    },
+    {
+      "name": "prd-development",
+      "source": "./skills/prd-development/",
+      "description": "Build a structured PRD that connects problem, users, solution, and success criteria. Use when turning discovery notes into an engineering-ready document for a major initiative.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "workflow",
+        "artifacts",
+        "templates",
+        "prd"
+      ],
+      "strict": false
+    },
+    {
+      "name": "press-release",
+      "source": "./skills/press-release/",
+      "description": "Write an Amazon-style press release that defines customer value before building. Use when aligning stakeholders on a new product, feature, or strategic bet.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "strategy",
+        "artifacts"
+      ],
+      "strict": false
+    },
+    {
+      "name": "prioritization-advisor",
+      "source": "./skills/prioritization-advisor/",
+      "description": "Choose a prioritization framework based on stage, team context, and stakeholder needs. Use when deciding between RICE, ICE, value/effort, or another scoring approach.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "prioritization"
+      ],
+      "strict": false
+    },
+    {
+      "name": "problem-framing-canvas",
+      "source": "./skills/problem-framing-canvas/",
+      "description": "Guide teams through MITRE's Problem Framing Canvas. Use when you need a clearer problem statement before jumping to solutions.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "frameworks"
+      ],
+      "strict": false
+    },
+    {
+      "name": "problem-statement",
+      "source": "./skills/problem-statement/",
+      "description": "Write a user-centered problem statement with who is blocked, what they are trying to do, why it matters, and how it feels. Use when framing discovery, prioritization, or a PRD.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component"
+      ],
+      "strict": false
+    },
+    {
+      "name": "product-strategy-session",
+      "source": "./skills/product-strategy-session/",
+      "description": "Run an end-to-end product strategy session across positioning, discovery, and roadmap planning. Use when a team needs validated direction before committing to execution.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "workflow"
+      ],
+      "strict": false
+    },
+    {
+      "name": "proto-persona",
+      "source": "./skills/proto-persona/",
+      "description": "Create a proto-persona from current research, market signals, and team knowledge. Use when you need a working customer profile before deeper validation.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "discovery",
+        "research"
+      ],
+      "strict": false
+    },
+    {
+      "name": "recommendation-canvas",
+      "source": "./skills/recommendation-canvas/",
+      "description": "Evaluate an AI product idea across outcomes, hypotheses, risks, and positioning. Use when deciding whether an AI solution deserves investment or recommendation.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "frameworks",
+        "ai"
+      ],
+      "strict": false
+    },
+    {
+      "name": "roadmap-planning",
+      "source": "./skills/roadmap-planning/",
+      "description": "Plan a strategic roadmap across prioritization, epic definition, stakeholder alignment, and sequencing. Use when turning strategy into a release plan that teams can execute.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "workflow",
+        "strategy",
+        "positioning",
         "roadmap"
+      ],
+      "strict": false
+    },
+    {
+      "name": "saas-economics-efficiency-metrics",
+      "source": "./skills/saas-economics-efficiency-metrics/",
+      "description": "Evaluate SaaS unit economics and capital efficiency. Use when deciding whether the business can scale efficiently or needs correction.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "finance",
+        "saas"
+      ],
+      "strict": false
+    },
+    {
+      "name": "saas-revenue-growth-metrics",
+      "source": "./skills/saas-revenue-growth-metrics/",
+      "description": "Calculate SaaS revenue, retention, and growth metrics. Use when diagnosing momentum, churn, expansion, or product-market-fit signals.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "finance",
+        "saas",
+        "metrics"
+      ],
+      "strict": false
+    },
+    {
+      "name": "skill-authoring-workflow",
+      "source": "./skills/skill-authoring-workflow/",
+      "description": "Turn raw PM content into a compliant, publish-ready skill. Use when creating or updating a repo skill without breaking standards.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "workflow",
+        "meta"
+      ],
+      "strict": false
+    },
+    {
+      "name": "storyboard",
+      "source": "./skills/storyboard/",
+      "description": "Create a six-frame storyboard that shows a user's journey from problem to solution. Use when you need a fast narrative for alignment, concept reviews, or demos.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "ux",
+        "artifacts"
+      ],
+      "strict": false
+    },
+    {
+      "name": "tam-sam-som-calculator",
+      "source": "./skills/tam-sam-som-calculator/",
+      "description": "Calculate TAM, SAM, and SOM with explicit assumptions, methods, and caveats. Use when sizing a market for a product idea, business case, or executive review.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "strategy",
+        "market-sizing"
+      ],
+      "strict": false
+    },
+    {
+      "name": "user-story-mapping-workshop",
+      "source": "./skills/user-story-mapping-workshop/",
+      "description": "Run a user story mapping workshop with adaptive questions and a structured map output. Use when you need backbone activities, tasks, and release slices for a workflow.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "user-stories",
+        "backlog",
+        "workshop",
+        "facilitation"
+      ],
+      "strict": false
+    },
+    {
+      "name": "user-story-mapping",
+      "source": "./skills/user-story-mapping/",
+      "description": "Create a user story map that lays out activities, steps, tasks, and release slices. Use when planning a workflow, backlog, or MVP around the user journey.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "user-stories",
+        "backlog"
+      ],
+      "strict": false
+    },
+    {
+      "name": "user-story-splitting",
+      "source": "./skills/user-story-splitting/",
+      "description": "Break a large story or epic into smaller deliverable stories using proven split patterns. Use when backlog items are too big for estimation, sequencing, or independent release.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "user-stories",
+        "backlog"
+      ],
+      "strict": false
+    },
+    {
+      "name": "user-story",
+      "source": "./skills/user-story/",
+      "description": "Create user stories with Mike Cohn format and Gherkin acceptance criteria. Use when turning user needs into development-ready work with clear outcomes and testable conditions.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "component",
+        "artifacts",
+        "templates",
+        "user-stories",
+        "backlog"
+      ],
+      "strict": false
+    },
+    {
+      "name": "vp-cpo-readiness-advisor",
+      "source": "./skills/vp-cpo-readiness-advisor/",
+      "description": "Guide the transition to VP or CPO across preparing, interviewing, landing, and recalibrating. Use when executive product scope is changing fast.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "career",
+        "leadership"
+      ],
+      "strict": false
+    },
+    {
+      "name": "workshop-facilitation",
+      "source": "./skills/workshop-facilitation/",
+      "description": "Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking.",
+      "category": "product-management",
+      "tags": [
+        "pm",
+        "product-management",
+        "interactive",
+        "workshop",
+        "facilitation"
       ],
       "strict": false
     }

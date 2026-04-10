@@ -53,10 +53,16 @@ What changed in v0.75:
 
 Release note: [`docs/announcements/2026-03-17-v0-75-pedagogic-first.md`](docs/announcements/2026-03-17-v0-75-pedagogic-first.md)
 
-**Now available:** Install skills directly from Claude Code via the plugin marketplace:
+**Now available:** Install skills individually from Claude Code via the plugin marketplace:
 ```bash
+# Add the marketplace source
 /plugin marketplace add deanpeters/Product-Manager-Skills
+
+# Install a single skill
 /plugin install jobs-to-be-done@pm-skills
+
+# Or install everything at once
+/plugin install pm-skills-bundle@pm-skills
 ```
 
 ---
@@ -566,6 +572,11 @@ Command definitions live in [`commands/`](commands/README.md), and generated bro
 ### With Claude Code (CLI)
 
 ```bash
+# Install a single skill from the plugin marketplace
+/plugin marketplace add deanpeters/Product-Manager-Skills
+/plugin install prd-development@pm-skills
+
+# Or use the cloned repo directly
 cd product-manager-skills
 claude "Using the PRD Development workflow, create a PRD for our mobile feature"
 ```
